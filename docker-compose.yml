@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    # se necessário, especifique o comando de start, ex:
+    # command: python manage.py runserver 0.0.0.0:8000
